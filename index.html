@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario De Contacto</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+
+	<div class="ring">
+  	<i style="--clr:#b5c0d5;"></i>
+  	<i style="--clr:#00aeff;"></i>
+  	<i style="--clr:#494597;"></i>
+  	<div class="login">
+
+		<div class="form">
+		&nbsp;
+			<form action="guardar.php" method="POST">
+				<h2>PROMETHEUS</h2>
+				<h3>[Sistema de Reporte de Incidencias]</h3>
+				<p>DNI</p>
+				<label for="dni">Debe tener 8 números seguidos de una letra</label>
+				<br>
+				<input type="text" name="dni" placeholder="00000000A" required pattern="^\d{8}[a-zA-Z]$">
+				
+				<p>Incidencia</p>
+				<label for="it">Seleccione el tipo de incidencia</label>
+				<br>
+					<select name="it">
+					<option class="deshabilitado" value="" disabled selected>Selecciona una opción</option>
+					<option>Router doméstico</option>
+					<option>SAI/UPS</option>
+					<option>Máquina Virtual</option>
+					<option>Windows Server</option>
+					<option>Linux Server</option>
+					<option>Montaje de Ordenador</option>
+					<option>Raspberry Pi</option>
+				</select>
+				
+				<p>Observaciones</p>
+				<label for="mensaje">Explique brevemente su incidencia</label>
+				<br>
+				<textarea maxlength="300" name="mensaje" placeholder="Máximo 300 caracteres" required></textarea>
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+
+	</body>
+</html>
+

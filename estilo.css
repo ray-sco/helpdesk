@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
+
+.form{
+  position: relative;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-color: #090a0f74;
+  border-radius: 50px;
+  backdrop-filter: blur(3px);
+  padding-bottom: 30px;
+}
+
+input[type=text]{
+	width:50%;
+	height:35px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+	border-radius: 15px;
+	margin: 0 auto;
+  text-align: center;
+}
+
+input::placeholder{
+	text-align: center;
+  font-weight: bold;
+}
+
+select{
+	width: 70%;
+	height: 40px;
+	font-family: "Quicksand", sans-serif;
+	font-size: 18px;
+	border-radius: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+textarea{
+	width: 400px;
+	height: 110px;
+	font-size: 18px;
+	font-family: "Quicksand", sans-serif;
+	border-radius: 18px;
+  font-weight: bold;
+  text-align: justify;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+textarea::placeholder{
+	text-align: center;
+  font-weight: bold;
+}
+
+
+input[type=submit]{
+  font-size: 20px;
+  width: 35%;
+  background: radial-gradient(ellipse at bottom, #ffffff, #7c89c6);
+  color: #1c0563;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 35px;
+  transition: 1s;
+}
+
+input[type=submit]:hover{
+  font-size: 22px;
+  width: 40%;
+  background: radial-gradient(ellipse at bottom, #6b35ff, #72deff);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 40px;
+  transition: 1s
+}
+
+h3{
+	color: #fff;
+	font-size:18px;
+	display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	font-family: "Quicksand", sans-serif;
+}
+
+p{
+	color: #fff;
+	font-size:25px;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	font-family: "Quicksand", sans-serif;
+}
+
+label{
+	font-size:14px;
+	color:#b8b8b8;
+	text-shadow:0px 1px 0px #6395c7;
+}
+
+h2 {
+	font-family: "Doto", sans-serif;
+	text-shadow:1px 1px 1px #ada9ef;
+  	font-size: 2em;
+  	color: #fff;
+}
+
+/*aqui empieza lo importado*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #b0c8e4 0%, #090A0F 100%)
+}
+.ring {
+  position: relative;
+  width: 650px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 3px solid #ffffff81;
+  transition: 1s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
